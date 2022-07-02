@@ -23,6 +23,19 @@ namespace IAMBEAUTY.Controllers
             return View();
         }
 
+        public IActionResult contactForm(string uname, string lname, string email, string phone)
+        {
+            if (uname == "Maryam" && lname == "abc" && email == "abc@gmail.com" && phone == "123")
+            {
+                ViewBag.Message = "Login Successfull";
+            }
+            else
+            {
+                ViewBag.Message = "Login failed";
+            }
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

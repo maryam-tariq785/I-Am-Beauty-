@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+
+<form method="post" action="/home/contactForm">
+    <input type="text" placeholder="Enter username" name="uname"/> <br />
+    <input type="text" placeholder="Enter lastname" name="lname"/> <br />
+    <input type="text" placeholder="Enter email" name="email"/> <br />
+    <input type="number" placeholder="Enter number" name="phone"/> <br />
+
+    <label>Gender</label> <br />
+    <label>Male</label>
+    <input type="radio" name="gender"/>
+    <label>Female</label>
+    <input type="radio" name="gender"/> <br />
+
+    <select>
+        <option>Sales</option>
+        <option>IT</option>
+    </select> <br/>
+
+
+    <textarea></textarea> <br />
+
+    <input type="submit" value="submit"/> <br />
+</form>
+
+<h1>@ViewBag.Message</h1>
